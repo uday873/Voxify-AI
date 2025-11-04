@@ -4,7 +4,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routes import auth, jobs
+from routes import auth, jobs
+
 from app.config import STORAGE_DIR
 
 app = FastAPI(title="Voxify AI - Backend")
